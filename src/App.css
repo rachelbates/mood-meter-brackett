@@ -33,6 +33,8 @@ code, p {
 .quarter-block {
   width: 50%;
   margin: .5rem;
+  transition: all .5s ease-in-out;
+  transition-property: width, height;
 }
 .quarter-block.bottom-left {
   background-color: #7575ff;
@@ -50,4 +52,8 @@ code, p {
   background-color: #949494;
   width: 50%;
   padding: .75rem;
+}
+.quarter-block:hover {
+  width: 75%;
+  z-index: 1;
 }
